@@ -13,15 +13,17 @@ def list_commands():
     return render_template('index.html', bot_commands=bot_commands)
 
 
-app.run()
-
-def main():
-    meetup = bcc.BCC()
-    # meetup.joined_one_year_from_now()
-
-    bot = slack.Slack()
-    bot.test()
-
+# def main():
+#     meetup = bcc.BCC()
+#     # meetup.joined_one_year_from_now()
+#
+#     bot = slack.Slack()
+#     bot.test()
+#
+#
 
 if __name__ == "__main__":
-    main()
+    # For testing purposes
+    # main()
+
+    app.run(debug=True)

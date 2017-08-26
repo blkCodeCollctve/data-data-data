@@ -1,1 +1,1 @@
-web: gunicorn botfrey
+web: gunicorn botfrey:app
