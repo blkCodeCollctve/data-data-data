@@ -38,6 +38,20 @@ class BCC(object):
             if one_yrs_ago.years == 0 and one_yrs_ago.days < 4 and one_yrs_ago.months == 0:
                 more_than_1_year_members.append(member)
 
-        #print(len(more_than_1_year_members))
-        for member in more_than_1_year_members:
-            pprint(member)
+        print(len(more_than_1_year_members))
+        # for member in more_than_1_year_members:
+        #     pprint(member)
+
+    def joined_one_year_from_now(self):
+        more_than_1_year_members = []
+        for member in self.members:
+            join_date = datetime.fromtimestamp((int(member['joined']) / 1000.0))
+            one_yrs_ago = relativedelta(join_date, datetime.now())
+
+            # Offsetting by 4 days to account for members besides founders.
+            if one_yrs_ago.years < 0:
+                more_than_1_year_members.append(member)
+
+        print(len(more_than_1_year_members))
+        # for member in more_than_1_year_members:
+        #     pprint(member)
