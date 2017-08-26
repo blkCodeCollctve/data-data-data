@@ -13,4 +13,5 @@ The one stop shop to helping us make better decisions about our members
    - Recommended to use virtualenv to handle environment
 - [Direnv](https://direnv.net/)
     - copy `.envrc_SAMPLE` => `.envrv` and enter values to variables
+    - run `direnv allow` to load env variables
 - `pip install -r requirements.txt`

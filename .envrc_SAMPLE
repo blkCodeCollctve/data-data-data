@@ -1,1 +1,4 @@
 export MEETUP_API=<meetup_api_key>
+export SLACK_API_TOKEN=<slack_api_token>
+export FLASK_APP=<app_file_name>
+export FLASK_DEBUG=<flask_debug_level>
