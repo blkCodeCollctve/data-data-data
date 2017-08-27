@@ -1,7 +1,7 @@
 import bcc
 import slack
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
 
@@ -18,7 +18,7 @@ def test_msg():
     bot = slack.Slack()
     bot.test()
 
-    return 200
+    return redirect(url_for('list_commands'))
 
 
 def main():
