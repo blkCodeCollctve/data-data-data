@@ -4,6 +4,14 @@
 
 The one stop shop to helping us make better decisions about our members
 
+### Heroku deployment
+- Add remote url
+   - https://git.heroku.com/botfrey.git
+- Deploy to heroku
+   - `deploy`
+   
+### Run Server
+- `flask run`
 
 ### Run Script
 - `python app.py`
